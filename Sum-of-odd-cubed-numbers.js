@@ -3,3 +3,9 @@ Find the sum of the odd numbers within an array, after cubing the initial intege
 */
 
 
+// Solution
+
+let cubeOdd = a => {
+  let isNumeric = a.every(x=>!isNaN(x))
+  return isNumeric ? a.filter(n=>n%2).reduce((s,n)=>s+(n*n*n), 0) :
+}
